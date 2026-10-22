@@ -1,0 +1,62 @@
+﻿# environments / caches
+venv/
+3d-reconstruction/
+__pycache__/
+*.pyc
+
+# tools & binaries
+colmap-x64-windows-cuda/
+*.exe
+*.dll
+
+# COLMAP workspaces, datasets, frames, outputs
+colmap_ws*/
+rgbd_dataset_*/
+synth_room*/
+frames_subset/
+output/
+presentation_assets/
+4110470963-preview_run/
+WhatsApp Video*/
+*_run/
+
+# large / private media and 3D outputs
+*.mov
+*.MOV
+*.mp4
+*.ply
+*.glb
+*.obj
+*.db
+*.npy
+*.npz
+*.pt
+*.pth
+
+# screenshots and screen recordings
+ScreenCapture_*.png
+ScreenCamera_*.json
+Screenshot*.png
+
+# submission bundle and review files
+FINAL_SUBMISSION_PACKAGE/
+CV_3D_Reconstruction_Project_Review_1*
+estimated_trajectory.txt
+
+# secrets
+.env
+*.key
+*.pem
+secrets*
+
+PROJECT_COMPLETE_GUIDE.md
+VIVA_PREP.md
+WhatsApp*
+*.jpeg
+*.jpg
+CV_3D_Reconstruction_Project_Review_1_*
+!experiments/FINAL_PIPELINE/figures/*
+
+experiments/phone_real/
+experiments/phone_real_v2/
+experiments/gemini_*/

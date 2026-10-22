@@ -1,0 +1,33 @@
+{
+  "recon_dir": "experiments\\spatial_depth\\runs\\fr1_desk\\spatial_transfer_from_fr2_xyz",
+  "sim3_scale": 0.8051600199943204,
+  "n_fused": 471234,
+  "n_fused_in_gt_region": 455333,
+  "n_gt": 195896,
+  "local_thickness_fused": {
+    "median_cm": 3.018551180226655,
+    "p75_cm": 3.6072072782703857,
+    "p90_cm": 3.983375946109148,
+    "n": 29999
+  },
+  "local_thickness_gt": {
+    "median_cm": 2.8919004535945323,
+    "p75_cm": 3.3962175120041183,
+    "p90_cm": 3.796805102323534,
+    "n": 29949
+  },
+  "accuracy_median_cm": 3.1591894428670235,
+  "accuracy_frac_5cm": 0.6314082221143646,
+  "completeness_median_cm": 1.7843577344388337,
+  "completeness_frac_5cm": 0.7910319761506105,
+  "extent_fused_m": [
+    3.999908843904085,
+    2.9436814018258444,
+    1.381453718649772
+  ],
+  "extent_gt_m": [
+    3.944867486098521,
+    2.974205343864831,
+    1.37762786975059
+  ]
+}

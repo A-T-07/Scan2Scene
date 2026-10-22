@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scan2Scene GLB viewer</title>
+<style>
+  :root { --bg: #0b0e12; --panel: #141a21; --text: #e6edf3; --muted: #8a97a6; --accent: #38d6e8; }
+  html, body { margin: 0; height: 100%; background: var(--bg); color: var(--text); font: 14px/1.4 system-ui, "Segoe UI", sans-serif; overflow: hidden; }
+  #ui { position: fixed; top: 12px; left: 12px; background: var(--panel); border: 1px solid #263140; border-radius: 8px;
+        padding: 12px 14px; width: 290px; z-index: 2; }
+  #ui h1 { font-size: 15px; margin: 0 0 6px; }
+  #ui p { margin: 4px 0; color: var(--muted); font-size: 12px; }
+  #ui label { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-top: 8px; }
+  #ui input[type=range] { width: 140px; }
+  button, select { background: #1d2631; color: var(--text); border: 1px solid #2f3b4a; border-radius: 6px; padding: 5px 9px; cursor: pointer; }
+  #status { color: var(--accent); margin-top: 8px; font-size: 12px; min-height: 16px; }
+  #drop { position: fixed; inset: 0; display: none; align-items: center; justify-content: center; font-size: 20px;
+          background: rgba(56, 214, 232, .12); border: 3px dashed var(--accent); z-index: 3; }
+  .legend span { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 4px; vertical-align: -1px; }
+</style>
+</head>
+<body>
+<div id="ui">
+  <h1>Scan2Scene — final phone reconstruction</h1>
+  <p>Point cloud exported unchanged from <code>scene.ply</code>. Units are fused units (not metric).</p>
+  <label>File
+    <select id="file">
+      <option value="final_phone_with_camera_trajectory.glb">with camera trajectory</option>
+      <option value="final_phone.glb">point cloud only</option>
+    </select>
+  </label>
+  <label>Point size <input id="size" type="range" min="0.002" max="0.03" step="0.001" value="0.009"></label>
+  <label>Show trajectory <input id="traj" type="checkbox" checked></label>
+  <label>Light background <input id="light" type="checkbox"></label>
+  <div style="margin-top:10px; display:flex; gap:6px; flex-wrap:wrap">
+    <button id="reset">Reset view</button>
+    <button id="top">Top view</button>
+    <button id="open">Open .glb…</button>
+    <input id="picker" type="file" accept=".glb" hidden>
+  </div>
+  <p class="legend" style="margin-top:10px">
+    <span style="background:#ff00ff"></span>camera path
+    <span style="background:#ffdc00;margin-left:8px"></span>camera frustums
+    <span style="background:#00ff00;margin-left:8px"></span>start
+    <span style="background:#ff2828;margin-left:8px"></span>end
+  </p>
+  <p>Drag = orbit · wheel = zoom · right-drag = pan. You can also drop a .glb onto the page.</p>
+  <div id="status"></div>
+</div>
+<div id="drop">Drop .glb to load</div>
+
+<script type="importmap">
+{ "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+} }
+</script>
+<script type="module">
+import * as THREE from "three";
+import { OrbitControls } from "three/addons/controls/OrbitControls.js";
+import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
+
+const status = (t) => (document.getElementById("status").textContent = t);
+const renderer = new THREE.WebGLRenderer({ antialias: true });
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+renderer.setSize(innerWidth, innerHeight);
+// COLOR_0 holds the original image RGB bytes; show them as-is (no linear->sRGB brightening).
+renderer.outputColorSpace = THREE.LinearSRGBColorSpace;
+document.body.appendChild(renderer.domElement);
+
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0x0b0e12);
+const camera = new THREE.PerspectiveCamera(55, innerWidth / innerHeight, 0.01, 500);
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.enableDamping = true;
+
+let root = null, pointsMats = [], lineObjs = [], box = null;
+
+function frame(top = false) {
+  if (!box) return;
+  const c = box.getCenter(new THREE.Vector3()), s = box.getSize(new THREE.Vector3());
+  const r = Math.max(s.x, s.y, s.z);
+  controls.target.copy(c);
+  camera.position.copy(top ? c.clone().add(new THREE.Vector3(0, r * 1.4, 0.001))
+                           : c.clone().add(new THREE.Vector3(r * 0.75, r * 0.65, r * 0.9)));
+  camera.near = r / 1000; camera.far = r * 20; camera.updateProjectionMatrix();
+  controls.update();
+}
+
+function applySettings() {
+  const size = parseFloat(document.getElementById("size").value);
+  pointsMats.forEach((m) => { m.size = size; m.needsUpdate = true; });
+  lineObjs.forEach((o) => (o.visible = document.getElementById("traj").checked));
+  scene.background.set(document.getElementById("light").checked ? 0xf2f4f7 : 0x0b0e12);
+}
+
+function show(gltf, label) {
+  if (root) scene.remove(root);
+  root = gltf.scene; pointsMats = []; lineObjs = [];
+  let n = 0;
+  root.traverse((o) => {
+    if (o.isPoints) {
+      const m = new THREE.PointsMaterial({ vertexColors: true, size: 0.009, sizeAttenuation: true });
+      o.material = m; pointsMats.push(m); n += o.geometry.attributes.position.count;
+    } else if (o.isLine || o.isLineSegments) {
+      o.material = new THREE.LineBasicMaterial({ vertexColors: true });
+      lineObjs.push(o);
+    }
+  });
+  scene.add(root);
+  box = new THREE.Box3();
+  root.traverse((o) => { if (o.isPoints) box.expandByObject(o); });
+  applySettings(); frame();
+  status(`${label}: ${n.toLocaleString()} points${lineObjs.length ? " + camera trajectory" : ""}`);
+}
+
+const loader = new GLTFLoader();
+function loadUrl(url) {
+  status(`loading ${url} …`);
+  loader.load(url, (g) => show(g, url), (e) => e.total && status(`loading ${url} … ${Math.round(100 * e.loaded / e.total)} %`),
+    () => status(`Could not fetch ${url}. If you opened this page as a local file, use "Open .glb…" or serve the folder (see VISUALIZATION_NOTES.md).`));
+}
+function loadFile(file) {
+  status(`reading ${file.name} …`);
+  file.arrayBuffer().then((buf) => loader.parse(buf, "", (g) => show(g, file.name), (e) => status(`parse error: ${e}`)));
+}
+
+document.getElementById("file").onchange = (e) => loadUrl(e.target.value);
+["size", "traj", "light"].forEach((id) => (document.getElementById(id).oninput = applySettings));
+document.getElementById("reset").onclick = () => frame(false);
+document.getElementById("top").onclick = () => frame(true);
+document.getElementById("open").onclick = () => document.getElementById("picker").click();
+document.getElementById("picker").onchange = (e) => e.target.files[0] && loadFile(e.target.files[0]);
+const drop = document.getElementById("drop");
+addEventListener("dragover", (e) => { e.preventDefault(); drop.style.display = "flex"; });
+addEventListener("dragleave", (e) => { if (e.target === drop) drop.style.display = "none"; });
+addEventListener("drop", (e) => { e.preventDefault(); drop.style.display = "none"; e.dataTransfer.files[0] && loadFile(e.dataTransfer.files[0]); });
+addEventListener("resize", () => { camera.aspect = innerWidth / innerHeight; camera.updateProjectionMatrix(); renderer.setSize(innerWidth, innerHeight); });
+
+if (location.protocol.startsWith("http")) loadUrl(document.getElementById("file").value);
+else status('Opened as a local file: click "Open .glb…" (or drag a .glb here).');
+
+renderer.setAnimationLoop(() => { controls.update(); renderer.render(scene, camera); });
+</script>
+</body>
+</html>

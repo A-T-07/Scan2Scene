@@ -1,0 +1,11 @@
+{
+  "recon_dir": "experiments\\pose_conf_experiment\\fr1_desk\\arm2_mv_edge_pose",
+  "sim3_scale": 0.8051600199943204,
+  "frames": 60,
+  "pixels": 3389960,
+  "absrel_mean": 0.04067509578605378,
+  "absrel_median_frame": 0.03575865252621084,
+  "absrel_frame_std": 0.02070089310954979,
+  "delta1": 0.9798505938788787,
+  "log_bias_frame_std": 0.017330056225884436
+}

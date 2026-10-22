@@ -1,0 +1,9 @@
+# Install PyTorch separately first (see README) so you get the CUDA build.
+transformers>=4.44
+accelerate
+pillow
+opencv-python
+open3d
+numpy
+matplotlib
+evo

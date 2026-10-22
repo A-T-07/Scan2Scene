@@ -1,0 +1,11 @@
+{
+  "recon_dir": "experiments\\pose_conf_experiment\\fr2_xyz\\arm3_mv_edge_frame",
+  "sim3_scale": 0.8169072244641151,
+  "frames": 367,
+  "pixels": 18928841,
+  "absrel_mean": 0.041082463696271956,
+  "absrel_median_frame": 0.04227192361797055,
+  "absrel_frame_std": 0.007895470573505198,
+  "delta1": 0.9905875993558168,
+  "log_bias_frame_std": 0.012758292340325748
+}

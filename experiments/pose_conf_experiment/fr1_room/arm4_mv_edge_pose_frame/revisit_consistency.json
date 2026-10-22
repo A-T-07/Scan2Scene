@@ -1,0 +1,20 @@
+{
+  "recon_dir": "experiments\\pose_conf_experiment\\fr1_room\\arm4_mv_edge_pose_frame",
+  "frames": 272,
+  "k": 15,
+  "start_end_camera_distance": 2.273939654103644,
+  "path_length": 19.367927944033507,
+  "revisit_start_vs_end": {
+    "overlap_frac": 0.7450106656747463,
+    "median": 0.07515106214684478,
+    "p75": 0.1480583547326461,
+    "n": 294423
+  },
+  "control_adjacent_mid": {
+    "overlap_frac": 0.9301990139452758,
+    "median": 0.013619746031441112,
+    "p75": 0.054195513542176554,
+    "n": 299232
+  },
+  "closure_ratio": 0.11740748213616496
+}

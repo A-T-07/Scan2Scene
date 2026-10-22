@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scan2Scene — 3D Room</title>
+<link rel="stylesheet" href="viewer.css">
+</head>
+<body>
+<div id="panel">
+  <button id="toggle" title="collapse">–</button>
+  <h1>Scan2Scene — reconstructed room</h1>
+  <p class="sub">Monocular phone video → 3.63 M-point colour point cloud (final pipeline).</p>
+  <div class="row">Point size <input id="size" type="range" min="0.004" max="0.03" step="0.001" value="0.013"></div>
+  <div class="row">Background
+    <span><button id="bgLight" class="on">Light</button> <button id="bgDark">Dark</button></span></div>
+  <div class="btns">
+    <button id="viewInside">Inside view</button>
+    <button id="viewOverview">Overview</button>
+    <button id="viewTop">Top view</button>
+  </div>
+  <div class="btns"><button id="mode">Analysis mode</button></div>
+  <div id="analysis">
+    <div class="row">Camera path <input id="showPath" type="checkbox" checked></div>
+    <div class="row">Start / end markers <input id="showMarkers" type="checkbox" checked></div>
+    <div class="row">Camera frustums <input id="showFrustums" type="checkbox"></div>
+    <p class="legend"><span style="background:#ff00ff"></span>path<span style="background:#ffdc00"></span>frustums
+      <span style="background:#00c000"></span>start<span style="background:#ff2828"></span>end</p>
+    <p class="sub">Recovered COLMAP trajectory (213 frames). Units: fused, not metric.</p>
+  </div>
+  <div id="status">loading…</div>
+</div>
+<div id="help">drag = orbit · wheel = zoom · right-drag = pan</div>
+
+<script type="importmap">
+{ "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+} }
+</script>
+<script type="module" src="viewer.js"></script>
+</body>
+</html>

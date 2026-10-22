@@ -1,0 +1,33 @@
+{
+  "recon_dir": "experiments\\weighted_fusion\\runs\\fr2_xyz\\weighted",
+  "sim3_scale": 0.8169072244641151,
+  "n_fused": 1436650,
+  "n_fused_in_gt_region": 1321492,
+  "n_gt": 290522,
+  "local_thickness_fused": {
+    "median_cm": 3.877216082453004,
+    "p75_cm": 4.3138449957647,
+    "p90_cm": 4.406949421201882,
+    "n": 30000
+  },
+  "local_thickness_gt": {
+    "median_cm": 3.133618522090684,
+    "p75_cm": 3.637334036094533,
+    "p90_cm": 3.951473787891409,
+    "n": 29918
+  },
+  "accuracy_median_cm": 4.0633270439105695,
+  "accuracy_frac_5cm": 0.5541781562052589,
+  "completeness_median_cm": 0.965161452612447,
+  "completeness_frac_5cm": 0.9306730643462457,
+  "extent_fused_m": [
+    5.3204713181863585,
+    5.329284712141611,
+    1.082283712999045
+  ],
+  "extent_gt_m": [
+    5.293163950232666,
+    5.1567274920439194,
+    1.137144731591338
+  ]
+}

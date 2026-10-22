@@ -1,0 +1,33 @@
+{
+  "recon_dir": "experiments\\spatial_depth\\runs\\fr2_xyz\\baseline_scale",
+  "sim3_scale": 0.8169072244641151,
+  "n_fused": 1764277,
+  "n_fused_in_gt_region": 1547748,
+  "n_gt": 290522,
+  "local_thickness_fused": {
+    "median_cm": 3.9954013383142364,
+    "p75_cm": 4.31853767508493,
+    "p90_cm": 4.409299787903387,
+    "n": 29999
+  },
+  "local_thickness_gt": {
+    "median_cm": 3.133618522090684,
+    "p75_cm": 3.637334036094533,
+    "p90_cm": 3.951473787891409,
+    "n": 29918
+  },
+  "accuracy_median_cm": 5.499711671015441,
+  "accuracy_frac_5cm": 0.47482406696697393,
+  "completeness_median_cm": 0.9854094217240129,
+  "completeness_frac_5cm": 0.9069089432125622,
+  "extent_fused_m": [
+    5.362582758180718,
+    5.355670478972671,
+    1.0960063892338157
+  ],
+  "extent_gt_m": [
+    5.293163950232666,
+    5.1567274920439194,
+    1.137144731591338
+  ]
+}

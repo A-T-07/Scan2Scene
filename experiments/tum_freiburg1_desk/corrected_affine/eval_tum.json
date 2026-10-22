@@ -1,0 +1,126 @@
+{
+  "sequence": "rgbd_dataset_freiburg1_desk",
+  "recon_dir": "Q:\\OPEN_CV_SEM5\\experiments\\tum_freiburg1_desk\\corrected_affine",
+  "trajectory_file": "Q:\\OPEN_CV_SEM5\\experiments\\tum_freiburg1_desk\\corrected_affine\\trajectory_fused.txt",
+  "evo": {
+    "ape_se3_rmse_m": 0.212435,
+    "n_poses": 62,
+    "ape_sim3_rmse_m": 0.022483,
+    "evo_scale_correction": 0.8051600199943202,
+    "rpe_se3_rmse_m": 0.049108,
+    "rpe_sim3_rmse_m": 0.02549
+  },
+  "own_alignment": {
+    "n": 62,
+    "sim3_scale_gt_per_unit": 0.8051600199943204,
+    "ate_se3_rmse_m": 0.2124352654630456,
+    "ate_sim3_rmse_m": 0.02248286688342031
+  },
+  "depth": {
+    "frames": 30,
+    "raw_gt_over_pred_p5_p50_p95": [
+      0.6870901169754667,
+      0.8110708356844911,
+      0.8615984395325156
+    ],
+    "raw_absrel_mean": 0.2670985289529214,
+    "aligned_absrel_as_is": 0.2628485853075733,
+    "aligned_absrel_after_sim3_scale": 0.049218517316273046,
+    "aligned_delta1_after_sim3_scale": 0.9680137088112268,
+    "aligned_per_frame_log_bias_std": 0.01863853111881045
+  },
+  "cloud": {
+    "n_fused": 419483,
+    "n_gt": 214072,
+    "gt_extent_xyz_m": [
+      3.703420675358913,
+      2.6612366907264002,
+      1.2283275516736132
+    ],
+    "fused_extent_own_frame_units": [
+      4.718643866947719,
+      3.966174960590544,
+      2.934195159673691
+    ],
+    "se3": {
+      "accuracy_median_cm": 18.322735811329274,
+      "accuracy_p90_cm": 44.65887835430183,
+      "frac_within_5cm": 0.11334428332018222,
+      "completeness_median_cm": 7.540401313016493,
+      "completeness_frac_within_5cm": 0.35268974924324525,
+      "extent_xyz_m": [
+        4.7439770718511065,
+        3.4470622433656306,
+        1.7993407066533782
+      ],
+      "planes": [
+        {
+          "normal": [
+            0.012,
+            -0.044,
+            0.999
+          ],
+          "gt_inliers": 54101,
+          "fused_pts": 20130,
+          "gt_robust_std_cm": 1.2080357869102216,
+          "fused_offset_cm": -5.145094638235193,
+          "fused_robust_std_cm": 10.12678887843263,
+          "fused_p5_p95_cm": 30.249320165446257
+        },
+        {
+          "normal": [
+            0.01,
+            -0.033,
+            0.999
+          ],
+          "gt_inliers": 26466,
+          "fused_pts": 22174,
+          "gt_robust_std_cm": 0.9566903485931715,
+          "fused_offset_cm": -11.424782036503666,
+          "fused_robust_std_cm": 9.896771201197362,
+          "fused_p5_p95_cm": 25.934153752343995
+        }
+      ]
+    },
+    "sim3": {
+      "accuracy_median_cm": 5.4903774220950465,
+      "accuracy_p90_cm": 24.38443739795335,
+      "frac_within_5cm": 0.471349256108114,
+      "completeness_median_cm": 1.1022727009355706,
+      "completeness_frac_within_5cm": 0.8776626555551403,
+      "extent_xyz_m": [
+        3.819660674024234,
+        2.7754367047899375,
+        1.4487571993456285
+      ],
+      "planes": [
+        {
+          "normal": [
+            0.005,
+            -0.045,
+            0.999
+          ],
+          "gt_inliers": 53237,
+          "fused_pts": 49090,
+          "gt_robust_std_cm": 1.3142616675153194,
+          "fused_offset_cm": -0.7942930522386593,
+          "fused_robust_std_cm": 2.801806775142029,
+          "fused_p5_p95_cm": 14.00959918014338
+        },
+        {
+          "normal": [
+            0.008,
+            -0.063,
+            0.998
+          ],
+          "gt_inliers": 24667,
+          "fused_pts": 28587,
+          "gt_robust_std_cm": 1.4075491699915839,
+          "fused_offset_cm": 0.322983514116848,
+          "fused_robust_std_cm": 3.3343415120574442,
+          "fused_p5_p95_cm": 21.39844451203558
+        }
+      ]
+    }
+  }
+}

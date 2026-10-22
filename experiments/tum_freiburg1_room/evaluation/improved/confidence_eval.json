@@ -1,0 +1,80 @@
+{
+  "recon_dir": "experiments\\tum_freiburg1_room\\improved",
+  "pixels": 2000000,
+  "bad_rate": 0.3331345,
+  "mean_err": 0.09911252635943023,
+  "median_err": 0.05741826580437337,
+  "mean_err_conf_weighted": 0.09023349607134303,
+  "dropped_frac": 0.021074,
+  "bad_rate_in_dropped": 0.8129685868843124,
+  "bad_rate_in_rejected": 0.8569503769744574,
+  "by_conf_quintile": [
+    {
+      "conf_range": [
+        0.050018310546875,
+        0.66796875
+      ],
+      "median_err": 0.10124145248377081,
+      "mean_err": 0.14462386109382572,
+      "bad_rate": 0.5044178509227125
+    },
+    {
+      "conf_range": [
+        0.66796875,
+        0.77099609375
+      ],
+      "median_err": 0.05764789759596134,
+      "mean_err": 0.09685773192219047,
+      "bad_rate": 0.343143353951119
+    },
+    {
+      "conf_range": [
+        0.77099609375,
+        0.92138671875
+      ],
+      "median_err": 0.060111741313071176,
+      "mean_err": 0.09270319310960404,
+      "bad_rate": 0.3249870506313933
+    },
+    {
+      "conf_range": [
+        0.92138671875,
+        0.96728515625
+      ],
+      "median_err": 0.05026594971572673,
+      "mean_err": 0.08036336533639794,
+      "bad_rate": 0.25476541427267896
+    },
+    {
+      "conf_range": [
+        0.96728515625,
+        1.0
+      ],
+      "median_err": 0.045129856965943516,
+      "mean_err": 0.06859690289297286,
+      "bad_rate": 0.1865427015810126
+    }
+  ],
+  "signals": {
+    "conf": {
+      "spearman_with_err": -0.23007480919665266,
+      "auroc_flag_bad": 0.654401740123382
+    },
+    "c_mv": {
+      "spearman_with_err": -0.22809012847609084,
+      "auroc_flag_bad": 0.6553104312133489
+    },
+    "c_edge": {
+      "spearman_with_err": -0.04750577208677975,
+      "auroc_flag_bad": 0.5230281595449974
+    },
+    "c_sparse": {
+      "spearman_with_err": 0.006217943379276831,
+      "auroc_flag_bad": 0.5283258260141966
+    },
+    "c_frame": {
+      "spearman_with_err": -0.33404278447772634,
+      "auroc_flag_bad": 0.7256429830426487
+    }
+  }
+}

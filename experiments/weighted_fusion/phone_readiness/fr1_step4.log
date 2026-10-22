@@ -1,0 +1,34 @@
+﻿Using device: cuda
+COLMAP: 62 registered frames (16 used), 9015 sparse points, 1 camera(s)
+
+Global scale S = 3.4367 COLMAP units per predicted metre (1 COLMAP unit = 0.2910 m); per-frame scale spread (robust std of log) = 0.083
+Spatial correction (perframe, poly2_xy_logd, lambda 0.01, clamp 0.2): 16 frames corrected, others keep the per-frame scale
+
+frame                  valid_px  corr   raw_S       a       b   inl  out  medres  points  status
+1305031452.791720.png    302163   310   3.279   0.958   0.000   300   10   0.014   75530  ok
+1305031454.127701.png    302095   142   3.572   1.037   0.000   129   13   0.018   75523  ok
+1305031455.459589.png    302570  1168   3.574   1.039   0.000  1161    7   0.011   75638  ok
+1305031456.791649.png    304590   832   3.402   0.990   0.000   827    5   0.011   76145  ok
+1305031458.127605.png    299475   744   3.725   1.088   0.000   739    5   0.011   74867  ok
+1305031459.459679.png    303231    95   3.101   0.895   0.000    83   12   0.016   75823  ok
+1305031460.791660.png    301392   726   3.461   0.999   0.000   670   56   0.014   75342  ok
+1305031462.127739.png    306157   442   3.111   0.906   0.000   435    7   0.012   76530  ok
+1305031463.459756.png    303949   287   3.413   0.988   0.000   286    1   0.011   75991  ok
+1305031464.796021.png    302324   219   3.533   1.038   0.000   201   18   0.012   75590  ok
+1305031466.127640.png    301139   571   3.649   1.062   0.000   560   11   0.013   75304  ok
+1305031467.459692.png    298773   780   3.667   1.065   0.000   767   13   0.010   74692  ok
+1305031468.795796.png    302401   386   3.654   1.060   0.000   367   19   0.013   75589  ok
+1305031470.127633.png    304368   322   3.263   0.963   0.000   322    0   0.011   76090  ok
+1305031471.459647.png    303597  1360   2.985   0.867   0.000  1336   24   0.011   75896  ok
+1305031472.795640.png    303114  1829   3.046   0.887   0.000  1759   70   0.012   75777  ok
+
+===== Reconstruction summary =====
+Frames: 62 registered, 16 considered, 16 fused; status {'ok': 16}
+Alignment: --align spatial; output frame: COLMAP frame rescaled by 1/S (depth network's median metric scale)
+Global scale S = 3.4367 COLMAP units / predicted m  ->  1 COLMAP unit = 0.2910 m
+Per-frame raw scale / S (p5, p50, p95): 0.882, 1.000, 1.071
+Per-frame a (p5, p50, p95): 0.882, 0.994, 1.071
+Median sparse correspondences/frame: 506; median relative residual after alignment: 0.0118
+Fusion: confidence-weighted voxel (mv,edge,sparse,frame); mean confidence 0.609, rejected 1.7% of valid px; 1189471 confident points -> 106782 voxels -> 103245 after outlier removal (0.4 s for consistency/confidence)
+Runtime: 1.0 s (depth+corr 0.1, backproj 0.2, fusion 0.2)
+Saved experiments\weighted_fusion\phone_readiness\fr1_step4_weighted\scene.ply

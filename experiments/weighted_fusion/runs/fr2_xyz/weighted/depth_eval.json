@@ -1,0 +1,11 @@
+{
+  "recon_dir": "experiments\\weighted_fusion\\runs\\fr2_xyz\\weighted",
+  "sim3_scale": 0.8169072244641151,
+  "frames": 367,
+  "pixels": 18929409,
+  "absrel_mean": 0.04305660732859175,
+  "absrel_median_frame": 0.04345687306695865,
+  "absrel_frame_std": 0.00794934964289395,
+  "delta1": 0.9868312960900559,
+  "log_bias_frame_std": 0.010317062671070638
+}

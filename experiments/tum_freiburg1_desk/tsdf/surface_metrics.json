@@ -1,0 +1,33 @@
+{
+  "recon_dir": "experiments\\tum_freiburg1_desk\\tsdf",
+  "sim3_scale": 0.8051600199943204,
+  "n_fused": 229159,
+  "n_fused_in_gt_region": 221090,
+  "n_gt": 195896,
+  "local_thickness_fused": {
+    "median_cm": 1.9692477497811487,
+    "p75_cm": 2.5415582674498287,
+    "p90_cm": 3.063965599315287,
+    "n": 29994
+  },
+  "local_thickness_gt": {
+    "median_cm": 2.8919004535945323,
+    "p75_cm": 3.3962175120041183,
+    "p90_cm": 3.796805102323534,
+    "n": 29949
+  },
+  "accuracy_median_cm": 3.5160981636060282,
+  "accuracy_frac_5cm": 0.6069383508978244,
+  "completeness_median_cm": 5.533477486702627,
+  "completeness_frac_5cm": 0.4652315514354555,
+  "extent_fused_m": [
+    3.8386673148042894,
+    2.8280385736531946,
+    1.407413670708848
+  ],
+  "extent_gt_m": [
+    3.944867486098521,
+    2.974205343864831,
+    1.37762786975059
+  ]
+}

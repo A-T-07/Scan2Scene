@@ -1,0 +1,11 @@
+{
+  "recon_dir": "experiments\\tum_fr2_desk_validation\\final",
+  "sim3_scale": 0.8642969224242179,
+  "frames": 297,
+  "pixels": 16625607,
+  "absrel_mean": 0.04536401241017372,
+  "absrel_median_frame": 0.04116274433731522,
+  "absrel_frame_std": 0.011267167733927077,
+  "delta1": 0.984399089995715,
+  "log_bias_frame_std": 0.00779284457230436
+}

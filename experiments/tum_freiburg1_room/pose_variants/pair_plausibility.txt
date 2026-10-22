@@ -1,0 +1,3 @@
+﻿control                long-range verified pairs   159 | axis angle median  20.6 deg | >90 deg (implausible):    1 ( 0.6%), their median inliers 39 (plausible pairs 148)
+variant_B_sequential   long-range verified pairs   405 | axis angle median  22.4 deg | >90 deg (implausible):    4 ( 1.0%), their median inliers 50 (plausible pairs 98)
+variant_C_global       long-range verified pairs  1586 | axis angle median  24.6 deg | >90 deg (implausible):    9 ( 0.6%), their median inliers 43 (plausible pairs 73)

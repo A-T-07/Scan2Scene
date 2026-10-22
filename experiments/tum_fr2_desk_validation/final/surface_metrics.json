@@ -1,0 +1,33 @@
+{
+  "recon_dir": "experiments\\tum_fr2_desk_validation\\final",
+  "sim3_scale": 0.8642969224242179,
+  "n_fused": 1913072,
+  "n_fused_in_gt_region": 1685595,
+  "n_gt": 730701,
+  "local_thickness_fused": {
+    "median_cm": 3.3831408929052107,
+    "p75_cm": 3.8463608146532935,
+    "p90_cm": 4.151057522933545,
+    "n": 29980
+  },
+  "local_thickness_gt": {
+    "median_cm": 2.990476035699542,
+    "p75_cm": 3.424145275433041,
+    "p90_cm": 3.8372556995800666,
+    "n": 29754
+  },
+  "accuracy_median_cm": 2.159253157355302,
+  "accuracy_frac_5cm": 0.7249974044773507,
+  "completeness_median_cm": 1.1639807318026691,
+  "completeness_frac_5cm": 0.865288264283202,
+  "extent_fused_m": [
+    8.509630986415848,
+    8.873748265643568,
+    1.1477136837221118
+  ],
+  "extent_gt_m": [
+    8.198650992696262,
+    8.855495898075901,
+    1.2399706039754492
+  ]
+}

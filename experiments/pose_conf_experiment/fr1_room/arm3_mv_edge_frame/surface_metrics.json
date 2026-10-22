@@ -1,0 +1,33 @@
+{
+  "recon_dir": "experiments\\pose_conf_experiment\\fr1_room\\arm3_mv_edge_frame",
+  "sim3_scale": 0.8428167916342458,
+  "n_fused": 1542761,
+  "n_fused_in_gt_region": 1462436,
+  "n_gt": 1028099,
+  "local_thickness_fused": {
+    "median_cm": 3.176399681151807,
+    "p75_cm": 3.755208539966612,
+    "p90_cm": 4.121181954700665,
+    "n": 29990
+  },
+  "local_thickness_gt": {
+    "median_cm": 2.881497966209918,
+    "p75_cm": 3.4294763608650554,
+    "p90_cm": 3.8766583051227745,
+    "n": 29876
+  },
+  "accuracy_median_cm": 4.279155564947687,
+  "accuracy_frac_5cm": 0.536472707181716,
+  "completeness_median_cm": 5.376952178419706,
+  "completeness_frac_5cm": 0.4888789892802152,
+  "extent_fused_m": [
+    5.314906062886053,
+    6.063867097298887,
+    3.0066666882575808
+  ],
+  "extent_gt_m": [
+    8.468012601860767,
+    8.718525208158535,
+    3.0799794020987776
+  ]
+}

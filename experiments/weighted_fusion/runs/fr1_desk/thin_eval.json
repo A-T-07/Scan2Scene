@@ -1,0 +1,68 @@
+{
+  "gt_points": 645331,
+  "set_sizes": {
+    "high_variation": 96451,
+    "objects": 195342
+  },
+  "info": {
+    "desk_height": 0.7993945110251557
+  },
+  "runs": {
+    "baseline": {
+      "high_variation": {
+        "completeness_2cm": 0.8285450643331848,
+        "completeness_5cm": 0.9194305916994121,
+        "fused_pts": 21514,
+        "accuracy_median_cm": 0.5565577465427093
+      },
+      "objects": {
+        "completeness_2cm": 0.6262862057314863,
+        "completeness_5cm": 0.8400958319255459,
+        "fused_pts": 118585,
+        "accuracy_median_cm": 2.417638884883883
+      }
+    },
+    "spatial": {
+      "high_variation": {
+        "completeness_2cm": 0.7369337798467616,
+        "completeness_5cm": 0.9158225420161533,
+        "fused_pts": 17749,
+        "accuracy_median_cm": 0.5644490573014791
+      },
+      "objects": {
+        "completeness_2cm": 0.5702153146788709,
+        "completeness_5cm": 0.8231716681512424,
+        "fused_pts": 109088,
+        "accuracy_median_cm": 2.366643184632701
+      }
+    },
+    "weighted": {
+      "high_variation": {
+        "completeness_2cm": 0.7046583239157707,
+        "completeness_5cm": 0.9091248405926325,
+        "fused_pts": 16341,
+        "accuracy_median_cm": 0.5575030031699812
+      },
+      "objects": {
+        "completeness_2cm": 0.5182705204205956,
+        "completeness_5cm": 0.7843474521608256,
+        "fused_pts": 86361,
+        "accuracy_median_cm": 2.0522330034775176
+      }
+    },
+    "tsdf_spatial": {
+      "high_variation": {
+        "completeness_2cm": 0.3108832464152782,
+        "completeness_5cm": 0.7207597640252563,
+        "fused_pts": 6788,
+        "accuracy_median_cm": 0.5940944109727552
+      },
+      "objects": {
+        "completeness_2cm": 0.1884080228522284,
+        "completeness_5cm": 0.43613764576998293,
+        "fused_pts": 43443,
+        "accuracy_median_cm": 3.4772619160544154
+      }
+    }
+  }
+}

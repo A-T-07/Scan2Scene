@@ -1,0 +1,11 @@
+{
+  "recon_dir": "experiments\\spatial_depth\\runs\\fr1_desk\\spatial_transfer_from_fr2_xyz",
+  "sim3_scale": 0.8051600199943204,
+  "frames": 60,
+  "pixels": 3389960,
+  "absrel_mean": 0.05281804188594775,
+  "absrel_median_frame": 0.04745371984433008,
+  "absrel_frame_std": 0.022001668848074328,
+  "delta1": 0.9753148908934048,
+  "log_bias_frame_std": 0.02805280385709706
+}

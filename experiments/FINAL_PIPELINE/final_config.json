@@ -1,0 +1,46 @@
+{
+  "colmap": "COLMAP 4.1.1 (commit a0d785f, CUDA); automatic_reconstructor --data_type video --single_camera 1 --dense 0 (SIMPLE_RADIAL, SIFT 8192 feats, guided matching, sequential overlap 10 + vocab-tree loop detection)",
+  "depth_model": "depth-anything/Depth-Anything-V2-Metric-Indoor-Large-hf",
+  "alignment": "--align spatial (per-frame low-order field fitted to COLMAP sparse points)",
+  "spatial_calibration_file": "experiments\\spatial_depth\\calib_fr2_xyz_perframe.json",
+  "spatial_calibration": {
+    "mode": "perframe",
+    "model": "poly2_xy_logd",
+    "lam": 0.01,
+    "clamp": 0.2,
+    "calibration_sequence": "fr2_xyz",
+    "heldout_median_abs_pct": 3.0133470290225235,
+    "baseline_const_heldout_median_abs_pct": 4.561992505671704,
+    "shared_shape": null
+  },
+  "fusion": "--fusion weighted (confidence-weighted 2 cm voxel average + statistical outlier removal nb=20, std=2.0)",
+  "conf_signals": "mv,edge",
+  "fixed_parameters": {
+    "voxel_size": 0.02,
+    "stride": 2,
+    "depth_trunc": 8.0,
+    "depth_min": 0.1,
+    "depth_max": 20.0,
+    "edge_thresh": 0.1,
+    "min_corr": 20,
+    "inlier_tol": 0.1,
+    "max_scale_dev": 1.5,
+    "max_reproj_err": 2.0,
+    "min_track": 3,
+    "conf_tau": 0.05,
+    "conf_tau_hard": 0.15,
+    "conf_edge": 0.05,
+    "conf_min": 0.05,
+    "conf_max_gap": 3,
+    "conf_min_overlap": 0.2,
+    "weighted_wmin": 0.5
+  },
+  "frame_sampling": {
+    "fr1_room": "every 5th RGB frame (6 fps), 640x480",
+    "fr1_desk": "every 10th (3 fps), 640x480",
+    "fr2_xyz": "every 10th, 640x480",
+    "synth_room2": "all 90 rendered frames, 640x480",
+    "phone_real_v2": "6 fps, downscaled to 960x540 (--max_width 960)"
+  },
+  "metric_calibration": "OFF (no --metric_scale); TUM-calibrated factor 0.811 is reported separately only"
+}

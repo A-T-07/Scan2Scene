@@ -1,0 +1,8 @@
+﻿== rgbd_dataset_freiburg2_desk :: experiments\tum_fr2_desk_validation\final
+evo (219 poses): ATE SE3 275.7 mm | RPE SE3 21.8 mm | ATE Sim3 11.9 mm | RPE Sim3 6.1 mm | scale correction 0.8641920947430055
+depth (112 fr): raw GT/pred p5/50/95 0.818, 0.884, 0.950, raw AbsRel 0.151 | aligned AbsRel as-is 0.151, after s* 0.061, d1 0.960, per-frame log-bias std 0.0167
+cloud: 1913072 pts; GT extent 6.26, 6.58, 1.21 m
+  [se3] acc median 22.2 cm, p90 96.6, <5cm 10% | compl median 4.1 cm, <5cm 54% | extent 12.27, 11.84, 1.98 m
+         plane n=[-0.037, 0.016, 0.999]: fused std 8.6 cm (p5-95 27.9), off -18.8 cm, GT std 1.4 cm; plane n=[-0.036, 0.017, 0.999]: fused std 7.3 cm (p5-95 25.6), off -17.0 cm, GT std 1.1 cm
+  [sim3] acc median 4.7 cm, p90 50.5, <5cm 52% | compl median 0.9 cm, <5cm 95% | extent 10.61, 10.23, 1.71 m
+         plane n=[-0.033, 0.014, 0.999]: fused std 2.5 cm (p5-95 12.5), off -0.3 cm, GT std 1.4 cm; plane n=[-0.002, 0.054, 0.999]: fused std 3.5 cm (p5-95 18.2), off -0.3 cm, GT std 1.3 cm

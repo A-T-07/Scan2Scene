@@ -1,0 +1,33 @@
+{
+  "recon_dir": "experiments\\weighted_fusion\\runs\\fr1_desk\\abl_mv",
+  "sim3_scale": 0.8051600199943204,
+  "n_fused": 361531,
+  "n_fused_in_gt_region": 356795,
+  "n_gt": 195896,
+  "local_thickness_fused": {
+    "median_cm": 2.9467104665099426,
+    "p75_cm": 3.5268013509943574,
+    "p90_cm": 3.9346422233048246,
+    "n": 29996
+  },
+  "local_thickness_gt": {
+    "median_cm": 2.8919004535945323,
+    "p75_cm": 3.3962175120041183,
+    "p90_cm": 3.796805102323534,
+    "n": 29949
+  },
+  "accuracy_median_cm": 2.988618467131001,
+  "accuracy_frac_5cm": 0.6290643086366121,
+  "completeness_median_cm": 2.8024944925867796,
+  "completeness_frac_5cm": 0.6393851839751705,
+  "extent_fused_m": [
+    3.7381667730501533,
+    2.7464401809585155,
+    1.3633883956163924
+  ],
+  "extent_gt_m": [
+    3.944867486098521,
+    2.974205343864831,
+    1.37762786975059
+  ]
+}

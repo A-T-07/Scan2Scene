@@ -1,0 +1,45 @@
+{
+  "model": "Q:\\OPEN_CV_SEM5\\experiments\\tum_freiburg1_room\\pose_variants\\variant_B_sequential\\repeats\\rep2\\0",
+  "sampled": 273,
+  "registered": 272,
+  "registration_pct": 99.63369963369964,
+  "n_models": 1,
+  "focal_px": 536.230883340876,
+  "k1": 0.02770611835545749,
+  "points3D": 37124,
+  "mean_reproj_px": 1.131826845335038,
+  "runtime_s": 125.1,
+  "evo": {
+    "ape_se3_rmse_m": 2.71341,
+    "n_poses": 272,
+    "ape_sim3_rmse_m": 0.204241,
+    "evo_scale_correction": 0.2691692621623088,
+    "rpe_se3_rmse_m": 0.23845,
+    "rpe_sim3_rmse_m": 0.046806
+  },
+  "ate_sim3_rmse_m": 0.2042413237518111,
+  "ate_sim3_median_m": 0.11580066833589515,
+  "ate_sim3_p90_m": 0.3957799273744271,
+  "ate_sim3_max_m": 0.5980233513692818,
+  "sim3_scale": 0.26916926194335805,
+  "window": {
+    "frames": 14,
+    "ate_median_m": 0.12018430157416041,
+    "ate_max_m": 0.14478751763875905,
+    "min_consecutive_inliers": 23
+  },
+  "start_end": {
+    "displacement_err_m": 0.13929862141270882,
+    "gt_displacement_m": 1.9924991808781254,
+    "relative_rotation_err_deg": 1.069093344859268,
+    "verified_start_end_pairs": 0,
+    "max_start_end_inliers": 0
+  },
+  "matching": {
+    "verified_pairs": 1893,
+    "total_inliers": 466174,
+    "median_inliers_per_pair": 154.0,
+    "min_consecutive_inliers": 23,
+    "nonsequential_pairs_gap_gt_30": 405
+  }
+}

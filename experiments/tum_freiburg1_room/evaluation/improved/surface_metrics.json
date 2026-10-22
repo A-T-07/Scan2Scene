@@ -1,0 +1,33 @@
+{
+  "recon_dir": "experiments\\tum_freiburg1_room\\improved",
+  "sim3_scale": 0.8428167916342458,
+  "n_fused": 1875200,
+  "n_fused_in_gt_region": 1768908,
+  "n_gt": 1028099,
+  "local_thickness_fused": {
+    "median_cm": 3.1899148074184835,
+    "p75_cm": 3.769372972514234,
+    "p90_cm": 4.131308410563653,
+    "n": 29987
+  },
+  "local_thickness_gt": {
+    "median_cm": 2.881497966209918,
+    "p75_cm": 3.4294763608650554,
+    "p90_cm": 3.8766583051227745,
+    "n": 29876
+  },
+  "accuracy_median_cm": 4.957286487077905,
+  "accuracy_frac_5cm": 0.5020916859440966,
+  "completeness_median_cm": 4.122214326054418,
+  "completeness_frac_5cm": 0.5338415852948014,
+  "extent_fused_m": [
+    6.08852401998379,
+    6.527497863405792,
+    3.1148000379329757
+  ],
+  "extent_gt_m": [
+    8.468012601860767,
+    8.718525208158535,
+    3.0799794020987776
+  ]
+}

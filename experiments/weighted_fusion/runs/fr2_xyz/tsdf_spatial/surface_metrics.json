@@ -1,0 +1,33 @@
+{
+  "recon_dir": "experiments\\weighted_fusion\\runs\\fr2_xyz\\tsdf_spatial",
+  "sim3_scale": 0.8169072244641151,
+  "n_fused": 538409,
+  "n_fused_in_gt_region": 291629,
+  "n_gt": 290522,
+  "local_thickness_fused": {
+    "median_cm": 1.7912603919525565,
+    "p75_cm": 2.415827013301553,
+    "p90_cm": 2.985606060760209,
+    "n": 29980
+  },
+  "local_thickness_gt": {
+    "median_cm": 3.133618522090684,
+    "p75_cm": 3.637334036094533,
+    "p90_cm": 3.951473787891409,
+    "n": 29918
+  },
+  "accuracy_median_cm": 7.3107238166634945,
+  "accuracy_frac_5cm": 0.3901018074334171,
+  "completeness_median_cm": 9.072680977324415,
+  "completeness_frac_5cm": 0.3186918718720097,
+  "extent_fused_m": [
+    5.438907932032572,
+    5.433795645572962,
+    1.1280221001688067
+  ],
+  "extent_gt_m": [
+    5.293163950232666,
+    5.1567274920439194,
+    1.137144731591338
+  ]
+}

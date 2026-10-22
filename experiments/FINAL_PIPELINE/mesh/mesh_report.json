@@ -1,0 +1,42 @@
+{
+  "input": "Q:\\OPEN_CV_SEM5\\experiments\\phone_real_v2\\improved\\scene.ply",
+  "input_points": 3629554,
+  "input_had_normals": false,
+  "normals": {
+    "method": "estimate_normals hybrid radius 0.08 fused units, max_nn 30; oriented towards nearest camera centre",
+    "seconds": 3.1383423805236816,
+    "flipped_frac": 0.5173343611914852
+  },
+  "poisson": [
+    {
+      "depth": 9,
+      "scale": 1.1,
+      "linear_fit": false,
+      "seconds": 9.170670986175537,
+      "vertices": 1638598,
+      "triangles": 3316860,
+      "vertex_support_median": 0.01072800060481967,
+      "unsupported_frac_gt_5cm": 0.03177289365665038,
+      "unsupported_frac_gt_20cm": 0.0033424915690120458,
+      "trimmed_vertices": 1474512,
+      "trimmed_triangles": 2959097,
+      "trimmed_unsupported_frac_gt_5cm": 0.00421495382879217,
+      "trimmed_unsupported_frac_gt_20cm": 0.0
+    },
+    {
+      "depth": 10,
+      "scale": 1.1,
+      "linear_fit": false,
+      "seconds": 44.02655553817749,
+      "vertices": 11244482,
+      "triangles": 22826008,
+      "vertex_support_median": 0.009868875631056043,
+      "unsupported_frac_gt_5cm": 0.006892714133029872,
+      "unsupported_frac_gt_20cm": 0.0005996719101867031,
+      "trimmed_vertices": 10118461,
+      "trimmed_triangles": 20375246,
+      "trimmed_unsupported_frac_gt_5cm": 0.0,
+      "trimmed_unsupported_frac_gt_20cm": 0.0
+    }
+  ]
+}

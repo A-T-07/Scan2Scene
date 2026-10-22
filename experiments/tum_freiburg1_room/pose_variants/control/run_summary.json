@@ -1,0 +1,27 @@
+{
+  "variant": "control",
+  "note": "original model evaluated from a copy; repeats = mapper re-runs on the same DB",
+  "original_runtime_s": 0,
+  "runs": [
+    {
+      "rep": 0,
+      "models": [
+        272
+      ]
+    },
+    {
+      "rep": 1,
+      "map_s": 70.46224617958069,
+      "models": [
+        272
+      ]
+    },
+    {
+      "rep": 2,
+      "map_s": 64.49612307548523,
+      "models": [
+        272
+      ]
+    }
+  ]
+}

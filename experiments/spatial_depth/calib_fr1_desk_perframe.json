@@ -1,0 +1,10 @@
+{
+  "mode": "perframe",
+  "model": "poly2_xy",
+  "lam": 0.01,
+  "clamp": 0.2,
+  "calibration_sequence": "fr1_desk",
+  "heldout_median_abs_pct": 1.2932940450795132,
+  "baseline_const_heldout_median_abs_pct": 1.7382171313039736,
+  "shared_shape": null
+}

@@ -1,0 +1,17 @@
+{
+  "mode": "transfer",
+  "model": "poly2_xy_logd",
+  "lam": 0.01,
+  "clamp": 0.2,
+  "calibration_sequence": "fr2_xyz",
+  "heldout_median_abs_pct": 3.2277617874709743,
+  "baseline_const_heldout_median_abs_pct": 4.561992505671704,
+  "shared_shape": [
+    0.01750272719011672,
+    -0.03960888769497771,
+    0.03451976454125668,
+    0.00651770094133826,
+    0.01336404826905213,
+    0.11479174896421512
+  ]
+}

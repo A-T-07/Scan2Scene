@@ -1,0 +1,20 @@
+{
+  "recon_dir": "experiments\\pose_conf_experiment\\fr2_xyz\\arm4_mv_edge_pose_frame",
+  "frames": 367,
+  "k": 15,
+  "start_end_camera_distance": 0.400158028405029,
+  "path_length": 8.842535070345972,
+  "revisit_start_vs_end": {
+    "overlap_frac": 0.6591670753044473,
+    "median": 0.12616297327213705,
+    "p75": 0.1916619608966159,
+    "n": 227176
+  },
+  "control_adjacent_mid": {
+    "overlap_frac": 0.9948261582984637,
+    "median": 0.02150657069395573,
+    "p75": 0.05715379434332994,
+    "n": 320723
+  },
+  "closure_ratio": 0.04525376775117189
+}

@@ -1,0 +1,80 @@
+{
+  "frames_registered": 367,
+  "frames_considered": 367,
+  "frames_fused": 367,
+  "status_counts": {
+    "ok": 367
+  },
+  "align": "scale",
+  "output_units": "COLMAP frame rescaled by 1/S (depth network's median metric scale)",
+  "global_scale_S_colmap_units_per_pred_metre": 8.808229432517857,
+  "metres_per_colmap_unit": 0.11353019442343786,
+  "per_frame_raw_scale_rel_to_S_p5_p50_p95": [
+    0.8497050104244646,
+    1.0,
+    1.246691909628456
+  ],
+  "per_frame_log_scale_robust_std": 0.06212534601955297,
+  "a_p5_p50_p95": [
+    0.8551439740907528,
+    1.0054999531185995,
+    1.2992183337729735
+  ],
+  "median_corr_per_frame": 1287.0,
+  "median_rel_residual_after_alignment": 0.0359617654551897,
+  "points_backprojected": 25210462,
+  "points_after_voxel": 1832345,
+  "points_final": 1764277,
+  "fusion": "voxel",
+  "fusion_params": {
+    "voxel_size": 0.02,
+    "pixel_stride": 2,
+    "depth_trunc": 8.0
+  },
+  "metric_scale_applied": 1.0,
+  "spatial": null,
+  "timing_s": {
+    "depth_and_correspondences_s": 3.4616782665252686,
+    "backprojection_s": 6.005296945571899,
+    "fusion_s": 8.769027471542358,
+    "total_s": 63.97775650024414
+  },
+  "args": {
+    "frames": "frames_subset",
+    "colmap_dir": "colmap_ws3\\sparse\\0",
+    "out": "experiments\\spatial_depth\\runs\\fr2_xyz\\baseline_scale",
+    "voxel_size": 0.02,
+    "stride": 2,
+    "frame_step": 1,
+    "align": "scale",
+    "smooth_window": 1,
+    "min_corr": 20,
+    "min_inlier_frac": 0.5,
+    "inlier_tol": 0.1,
+    "max_scale_dev": 1.5,
+    "max_reproj_err": 2.0,
+    "min_track": 3,
+    "depth_min": 0.1,
+    "depth_max": 20.0,
+    "depth_trunc": 8.0,
+    "edge_thresh": 0.1,
+    "model": "depth-anything/Depth-Anything-V2-Metric-Indoor-Large-hf",
+    "recompute_depth": false,
+    "depth_cache": "experiments\\tum_fr2_xyz\\corrected_scale\\depth_pred",
+    "no_viewer": true,
+    "fusion": "voxel",
+    "tsdf_voxel": 0.02,
+    "tsdf_trunc": 0.08,
+    "tsdf_mesh": false,
+    "spatial_mode": "perframe",
+    "spatial_model": "lin_xy_logd",
+    "spatial_lambda": 0.1,
+    "spatial_clamp": 0.2,
+    "spatial_min_pts": 60,
+    "spatial_params": null,
+    "save_aligned_depth": true,
+    "metric_scale": null,
+    "metric_scale_file": null,
+    "mask_dir": null
+  }
+}

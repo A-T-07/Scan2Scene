@@ -1,0 +1,33 @@
+{
+  "variant": "variant_B_sequential",
+  "matcher": "sequential_matcher",
+  "overrides": {
+    "SequentialMatching.overlap": "30",
+    "SequentialMatching.loop_detection_period": "5",
+    "SequentialMatching.loop_detection_num_images": "100"
+  },
+  "match_s": 30.335397005081177,
+  "runs": [
+    {
+      "rep": 0,
+      "map_s": 83.9046585559845,
+      "models": [
+        272
+      ]
+    },
+    {
+      "rep": 1,
+      "map_s": 87.58163595199585,
+      "models": [
+        272
+      ]
+    },
+    {
+      "rep": 2,
+      "map_s": 94.71589207649231,
+      "models": [
+        272
+      ]
+    }
+  ]
+}

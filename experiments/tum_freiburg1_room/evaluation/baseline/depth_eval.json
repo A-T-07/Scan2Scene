@@ -1,0 +1,11 @@
+{
+  "recon_dir": "experiments\\tum_freiburg1_room\\baseline",
+  "sim3_scale": 0.8428167916342458,
+  "frames": 272,
+  "pixels": 15577646,
+  "absrel_mean": 0.09994220617287806,
+  "absrel_median_frame": 0.07077916546388621,
+  "absrel_frame_std": 0.069138973812301,
+  "delta1": 0.8713154596888399,
+  "log_bias_frame_std": 0.11871852392978251
+}

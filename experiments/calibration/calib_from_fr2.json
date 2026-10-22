@@ -1,0 +1,12 @@
+{
+  "metric_scale": 0.8169072244641151,
+  "method": "geometric mean of Sim(3) camera-centre scales",
+  "sequences": [
+    {
+      "recon_dir": "Q:\\OPEN_CV_SEM5\\experiments\\tum_fr2_xyz\\corrected_scale",
+      "groundtruth": "Q:\\OPEN_CV_SEM5\\rgbd_dataset_freiburg2_xyz\\rgbd_dataset_freiburg2_xyz\\groundtruth.txt",
+      "sim3_scale": 0.8169072244641151,
+      "poses": 367
+    }
+  ]
+}

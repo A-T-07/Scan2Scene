@@ -1,0 +1,14 @@
+{
+  "estimate": "Q:\\OPEN_CV_SEM5\\experiments\\pose_conf_experiment\\synth_room2\\arm1_mv_edge\\trajectory_fused.txt",
+  "reference": "Q:\\OPEN_CV_SEM5\\synth_room2\\groundtruth.txt",
+  "estimate_poses": 90,
+  "reference_poses": 90,
+  "common_timestamps": 90,
+  "method": "eval_tum.run_evo: evo_ape/evo_rpe tum <gt> <est> with -a (SE3) and -as (Sim3), default delta=1 frame",
+  "ape_se3_rmse_m": 0.337127,
+  "n_poses": 90,
+  "ape_sim3_rmse_m": 0.007633,
+  "evo_scale_correction": 0.754194997104519,
+  "rpe_se3_rmse_m": 0.016963,
+  "rpe_sim3_rmse_m": 0.002977
+}

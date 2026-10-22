@@ -1,0 +1,20 @@
+{
+  "recon_dir": "experiments\\tum_freiburg1_room\\baseline",
+  "frames": 272,
+  "k": 15,
+  "start_end_camera_distance": 2.273939654103644,
+  "path_length": 19.367927944033507,
+  "revisit_start_vs_end": {
+    "overlap_frac": 0.7802845832268517,
+    "median": 0.07663656089993376,
+    "p75": 0.15486177872491458,
+    "n": 323648
+  },
+  "control_adjacent_mid": {
+    "overlap_frac": 0.9332775260980894,
+    "median": 0.012482664148585489,
+    "p75": 0.04934244853011641,
+    "n": 303248
+  },
+  "closure_ratio": 0.11740748213616496
+}

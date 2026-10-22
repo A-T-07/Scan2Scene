@@ -1,0 +1,110 @@
+{
+  "ate_abs": {
+    "n_obs": {
+      "spearman": 0.4282892185815644,
+      "auroc_worst10": 0.7253366510538641
+    },
+    "reproj_img": {
+      "spearman": -0.037508616844410196,
+      "auroc_worst10": 0.44481850117096017
+    },
+    "track_med": {
+      "spearman": 0.6495027095875034,
+      "auroc_worst10": 0.8818793911007026
+    },
+    "inl_nb": {
+      "spearman": 0.3103129494330213,
+      "auroc_worst10": 0.6677400468384075
+    },
+    "step_ratio": {
+      "spearman": -0.058738647857689126,
+      "auroc_worst10": 0.5258343091334895
+    },
+    "rot_step": {
+      "spearman": 0.1604659178459916,
+      "auroc_worst10": 0.5668911007025761
+    },
+    "accel": {
+      "spearman": 0.05540751046059785,
+      "auroc_worst10": 0.6255854800936768
+    },
+    "align_res": {
+      "spearman": 0.4808437709457895,
+      "auroc_worst10": 0.8792447306791569
+    }
+  },
+  "rpe_local": {
+    "n_obs": {
+      "spearman": 0.5192896877263816,
+      "auroc_worst10": 0.8414875781130925
+    },
+    "reproj_img": {
+      "spearman": 0.33861004037549663,
+      "auroc_worst10": 0.6401463191586648
+    },
+    "track_med": {
+      "spearman": 0.4487948797179813,
+      "auroc_worst10": 0.8290656912056089
+    },
+    "inl_nb": {
+      "spearman": 0.5158147982620082,
+      "auroc_worst10": 0.8430879439109892
+    },
+    "step_ratio": {
+      "spearman": 0.03291236085607326,
+      "auroc_worst10": 0.49047401310775796
+    },
+    "rot_step": {
+      "spearman": 0.4213973366499464,
+      "auroc_worst10": 0.6524919981710106
+    },
+    "accel": {
+      "spearman": 0.14645620805650433,
+      "auroc_worst10": 0.7184880353604634
+    },
+    "align_res": {
+      "spearman": 0.42625580902649174,
+      "auroc_worst10": 0.8001828989483311
+    }
+  },
+  "window_vs_rest": {
+    "n_obs": {
+      "window_median": 298.5,
+      "rest_median": 690.0
+    },
+    "reproj_img": {
+      "window_median": 0.9845316251114657,
+      "rest_median": 1.0548226812735626
+    },
+    "track_med": {
+      "window_median": 5.0,
+      "rest_median": 7.0
+    },
+    "inl_nb": {
+      "window_median": 260.0,
+      "rest_median": 395.5
+    },
+    "step_ratio": {
+      "window_median": 1.0,
+      "rest_median": 1.0
+    },
+    "rot_step": {
+      "window_median": 8.192226333005625,
+      "rest_median": 6.107762551209095
+    },
+    "accel": {
+      "window_median": 0.6658632433939027,
+      "rest_median": 0.4177871210224692
+    },
+    "align_res": {
+      "window_median": 0.6497312579083208,
+      "rest_median": 0.027406727528533147
+    }
+  },
+  "targets": {
+    "ate_window_median_m": 0.08077313750427131,
+    "ate_rest_median_m": 0.046753544593766315,
+    "rpe_window_median_m": 0.03958164181734511,
+    "rpe_rest_median_m": 0.022353756498116897
+  }
+}

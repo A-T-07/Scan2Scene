@@ -1,0 +1,219 @@
+{
+  "fr1_room": {
+    "baseline": {
+      "acc": 9.64254493515556,
+      "p90": 42.40453305696546,
+      "w5": 33.097384022558686,
+      "comp_med": 1.4921607693444574,
+      "comp5": 72.41178298265278,
+      "ate": 89.45400000000001,
+      "rpe": 28.179,
+      "ate_se3": 209.081,
+      "absrel": 9.994220617287807,
+      "thick": 3.3404075833504145,
+      "points": 2457590,
+      "runtime": 168.94302606582642,
+      "depth_inference_in_runtime": true,
+      "revisit": 7.663656089993376
+    },
+    "final": {
+      "acc": 7.946908501470126,
+      "p90": 33.96094950977967,
+      "w5": 37.86337457337884,
+      "comp_med": 1.8524315075056892,
+      "comp5": 68.82205018903646,
+      "ate": 89.45400000000001,
+      "rpe": 28.179,
+      "ate_se3": 209.081,
+      "absrel": 9.835711901632777,
+      "thick": 3.1899148074184835,
+      "points": 1875200,
+      "runtime": 33.664334774017334,
+      "depth_inference_in_runtime": false,
+      "revisit": 7.515106214684478
+    },
+    "kind": "tum",
+    "sources": {
+      "base": {
+        "cloud": "experiments\\tum_freiburg1_room\\evaluation\\baseline\\eval_tum.json",
+        "depth": "experiments\\tum_freiburg1_room\\evaluation\\baseline\\depth_eval.json",
+        "surf": "experiments\\tum_freiburg1_room\\evaluation\\baseline\\surface_metrics.json",
+        "summ": "experiments\\tum_freiburg1_room\\baseline\\summary.json",
+        "revisit": "experiments\\tum_freiburg1_room\\evaluation\\baseline\\revisit_consistency.json"
+      },
+      "final": {
+        "cloud": "experiments\\tum_freiburg1_room\\evaluation\\improved\\eval_tum.json",
+        "depth": "experiments\\tum_freiburg1_room\\evaluation\\improved\\depth_eval.json",
+        "surf": "experiments\\tum_freiburg1_room\\evaluation\\improved\\surface_metrics.json",
+        "summ": "experiments\\tum_freiburg1_room\\improved\\summary.json",
+        "revisit": "experiments\\tum_freiburg1_room\\evaluation\\improved\\revisit_consistency.json"
+      },
+      "kind": "tum"
+    }
+  },
+  "fr1_desk": {
+    "baseline": {
+      "acc": 5.741538487482885,
+      "p90": 25.634822624179304,
+      "w5": 46.15510553624503,
+      "comp_med": 1.1370101942343127,
+      "comp5": 83.24395530475728,
+      "ate": 22.483,
+      "rpe": 25.49,
+      "ate_se3": 212.435,
+      "absrel": 4.792657869908901,
+      "thick": 3.061854381769592,
+      "points": 397020,
+      "runtime": 2.249312400817871,
+      "depth_inference_in_runtime": false,
+      "revisit": null,
+      "cloud_run_points": 397020,
+      "same_reconstruction": true
+    },
+    "final": {
+      "acc": 5.2263193823100895,
+      "p90": 23.011928536249354,
+      "w5": 48.804693070590524,
+      "comp_med": 1.3902463106593568,
+      "comp5": 83.2037819051534,
+      "ate": 22.483,
+      "rpe": 25.49,
+      "ate_se3": 212.435,
+      "absrel": 4.067509578605378,
+      "thick": 2.8897874954818237,
+      "points": 308540,
+      "runtime": 10.445475578308105,
+      "depth_inference_in_runtime": false,
+      "revisit": 1.6449521898274617
+    },
+    "kind": "tum",
+    "sources": {
+      "base": {
+        "cloud": "experiments\\tum_freiburg1_desk\\corrected_scale\\eval_tum_rerun.json",
+        "depth": "experiments\\spatial_depth\\runs\\fr1_desk\\baseline_scale\\depth_eval.json",
+        "surf": "experiments\\spatial_depth\\runs\\fr1_desk\\baseline_scale\\surface_metrics.json",
+        "summ": "experiments\\spatial_depth\\runs\\fr1_desk\\baseline_scale\\summary.json",
+        "summ_cloud": "experiments\\tum_freiburg1_desk\\corrected_scale\\summary.json",
+        "revisit": null
+      },
+      "final": {
+        "cloud": "experiments\\pose_conf_experiment\\fr1_desk\\arm1_mv_edge\\eval_tum.json",
+        "depth": "experiments\\pose_conf_experiment\\fr1_desk\\arm1_mv_edge\\depth_eval.json",
+        "surf": "experiments\\pose_conf_experiment\\fr1_desk\\arm1_mv_edge\\surface_metrics.json",
+        "summ": "experiments\\pose_conf_experiment\\fr1_desk\\arm1_mv_edge\\summary.json",
+        "revisit": "experiments\\pose_conf_experiment\\fr1_desk\\arm1_mv_edge\\revisit_consistency.json"
+      },
+      "kind": "tum"
+    }
+  },
+  "fr2_xyz": {
+    "baseline": {
+      "acc": 8.71164493648166,
+      "p90": 40.29118079293143,
+      "w5": 35.605066551340855,
+      "comp_med": 0.9486044934503757,
+      "comp5": 90.39961742489287,
+      "ate": 7.424,
+      "rpe": 2.9619999999999997,
+      "ate_se3": 82.59,
+      "absrel": 4.889288561050916,
+      "thick": 3.9954013383142364,
+      "points": 1764277,
+      "runtime": 63.97775650024414,
+      "depth_inference_in_runtime": false,
+      "revisit": null,
+      "cloud_run_points": 1764277,
+      "same_reconstruction": true
+    },
+    "final": {
+      "acc": 6.251287968701849,
+      "p90": 32.651132347187186,
+      "w5": 43.93983985962468,
+      "comp_med": 0.9266441957889759,
+      "comp5": 92.92679188985088,
+      "ate": 7.424,
+      "rpe": 2.9619999999999997,
+      "ate_se3": 82.59,
+      "absrel": 4.108246369627196,
+      "thick": 3.9594624791283053,
+      "points": 1613959,
+      "runtime": 89.4451494216919,
+      "depth_inference_in_runtime": false,
+      "revisit": 12.616297327213704
+    },
+    "kind": "tum",
+    "sources": {
+      "base": {
+        "cloud": "experiments\\tum_fr2_xyz\\corrected_scale\\eval_tum_rerun.json",
+        "depth": "experiments\\spatial_depth\\runs\\fr2_xyz\\baseline_scale\\depth_eval.json",
+        "surf": "experiments\\spatial_depth\\runs\\fr2_xyz\\baseline_scale\\surface_metrics.json",
+        "summ": "experiments\\spatial_depth\\runs\\fr2_xyz\\baseline_scale\\summary.json",
+        "summ_cloud": "experiments\\tum_fr2_xyz\\corrected_scale\\summary.json",
+        "revisit": null
+      },
+      "final": {
+        "cloud": "experiments\\pose_conf_experiment\\fr2_xyz\\arm1_mv_edge\\eval_tum.json",
+        "depth": "experiments\\pose_conf_experiment\\fr2_xyz\\arm1_mv_edge\\depth_eval.json",
+        "surf": "experiments\\pose_conf_experiment\\fr2_xyz\\arm1_mv_edge\\surface_metrics.json",
+        "summ": "experiments\\pose_conf_experiment\\fr2_xyz\\arm1_mv_edge\\summary.json",
+        "revisit": "experiments\\pose_conf_experiment\\fr2_xyz\\arm1_mv_edge\\revisit_consistency.json"
+      },
+      "kind": "tum"
+    }
+  },
+  "synth_room2": {
+    "baseline": {
+      "acc": 9.189742092589944,
+      "p90": 31.097514879214184,
+      "w5": 35.0714311064931,
+      "comp_med": 1.345781203009836,
+      "comp5": 78.60830298285623,
+      "ate": 7.6333004217844564,
+      "rpe": 2.977,
+      "ate_se3": 337.1269915487183,
+      "absrel": 3.92966114430839,
+      "thick": 2.5411674418435033,
+      "points": 1324283,
+      "runtime": 6.373226642608643,
+      "depth_inference_in_runtime": false,
+      "revisit": null,
+      "cloud_run_points": 1324283,
+      "same_reconstruction": true
+    },
+    "final": {
+      "acc": 5.956545964846522,
+      "p90": 16.845847657879656,
+      "w5": 45.17951779101481,
+      "comp_med": 2.026170674032784,
+      "comp5": 70.18221632231639,
+      "ate": 7.6333004217844564,
+      "rpe": 2.977,
+      "ate_se3": 337.1269915487183,
+      "absrel": 1.909106998019547,
+      "thick": 1.5141832635137422,
+      "points": 715333,
+      "runtime": 13.362520933151245,
+      "depth_inference_in_runtime": false,
+      "revisit": 2.3620663320879487
+    },
+    "kind": "synth",
+    "sources": {
+      "base": {
+        "cloud": "synth_room2\\recon_scale\\eval_synth.json",
+        "depth": "experiments\\spatial_depth\\runs\\synth_room2\\baseline_scale\\depth_eval.json",
+        "surf": "experiments\\spatial_depth\\runs\\synth_room2\\baseline_scale\\surface_metrics.json",
+        "summ": "experiments\\spatial_depth\\runs\\synth_room2\\baseline_scale\\summary.json",
+        "summ_cloud": "synth_room2\\recon_scale\\summary.json",
+        "revisit": null
+      },
+      "final": {
+        "cloud": "experiments\\pose_conf_experiment\\synth_room2\\arm1_mv_edge\\eval_synth.json",
+        "depth": "experiments\\pose_conf_experiment\\synth_room2\\arm1_mv_edge\\depth_eval.json",
+        "surf": "experiments\\pose_conf_experiment\\synth_room2\\arm1_mv_edge\\surface_metrics.json",
+        "summ": "experiments\\pose_conf_experiment\\synth_room2\\arm1_mv_edge\\summary.json",
+        "revisit": "experiments\\pose_conf_experiment\\synth_room2\\arm1_mv_edge\\revisit_consistency.json"
+      },
+      "kind": "synth"
+    }
+  }
+}

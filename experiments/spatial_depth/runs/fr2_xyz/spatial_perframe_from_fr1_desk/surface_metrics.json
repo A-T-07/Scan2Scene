@@ -1,0 +1,33 @@
+{
+  "recon_dir": "experiments\\spatial_depth\\runs\\fr2_xyz\\spatial_perframe_from_fr1_desk",
+  "sim3_scale": 0.8169072244641151,
+  "n_fused": 1757847,
+  "n_fused_in_gt_region": 1551383,
+  "n_gt": 290522,
+  "local_thickness_fused": {
+    "median_cm": 4.024999459394209,
+    "p75_cm": 4.353916428707917,
+    "p90_cm": 4.415124356296128,
+    "n": 29999
+  },
+  "local_thickness_gt": {
+    "median_cm": 3.133618522090684,
+    "p75_cm": 3.637334036094533,
+    "p90_cm": 3.951473787891409,
+    "n": 29918
+  },
+  "accuracy_median_cm": 4.416150156702301,
+  "accuracy_frac_5cm": 0.5330488989501625,
+  "completeness_median_cm": 0.931692267337526,
+  "completeness_frac_5cm": 0.9470091765855942,
+  "extent_fused_m": [
+    5.329695413161073,
+    5.384497687002792,
+    1.081539245606286
+  ],
+  "extent_gt_m": [
+    5.293163950232666,
+    5.1567274920439194,
+    1.137144731591338
+  ]
+}

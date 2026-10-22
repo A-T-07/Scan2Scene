@@ -1,0 +1,11 @@
+{
+  "recon_dir": "experiments\\spatial_depth\\runs\\fr2_xyz\\baseline_scale",
+  "sim3_scale": 0.8169072244641151,
+  "frames": 367,
+  "pixels": 18929464,
+  "absrel_mean": 0.048892885610509154,
+  "absrel_median_frame": 0.04693820365918694,
+  "absrel_frame_std": 0.012364690313675483,
+  "delta1": 0.9816832752147489,
+  "log_bias_frame_std": 0.02723125637310267
+}

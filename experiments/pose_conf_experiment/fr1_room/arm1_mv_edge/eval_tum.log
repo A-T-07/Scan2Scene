@@ -1,0 +1,8 @@
+﻿== rgbd_dataset_freiburg1_room :: experiments\pose_conf_experiment\fr1_room\arm1_mv_edge
+evo (272 poses): ATE SE3 209.1 mm | RPE SE3 34.9 mm | ATE Sim3 89.5 mm | RPE Sim3 28.2 mm | scale correction 0.842816791634246
+depth (136 fr): raw GT/pred p5/50/95 0.741, 0.834, 1.012, raw AbsRel 0.219 | aligned AbsRel as-is 0.211, after s* 0.105, d1 0.859, per-frame log-bias std 0.1238
+cloud: 1875200 pts; GT extent 5.17, 7.36, 2.97 m
+  [se3] acc median 23.9 cm, p90 63.3, <5cm 14% | compl median 6.9 cm, <5cm 41% | extent 7.27, 7.93, 4.05 m
+         plane n=[-0.019, 0.003, 1.0]: fused std 6.5 cm (p5-95 27.2), off -2.3 cm, GT std 1.4 cm; plane n=[0.007, -0.015, 1.0]: fused std 14.7 cm (p5-95 41.4), off -14.7 cm, GT std 1.2 cm
+  [sim3] acc median 7.9 cm, p90 34.0, <5cm 38% | compl median 1.9 cm, <5cm 69% | extent 6.13, 6.68, 3.41 m
+         plane n=[-0.008, 0.004, 1.0]: fused std 3.6 cm (p5-95 18.2), off -1.2 cm, GT std 1.4 cm; plane n=[0.005, -0.023, 1.0]: fused std 2.7 cm (p5-95 16.3), off -0.3 cm, GT std 1.4 cm

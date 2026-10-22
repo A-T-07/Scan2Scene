@@ -1,0 +1,29 @@
+{
+  "variant": "variant_C_global",
+  "matcher": "exhaustive_matcher",
+  "overrides": {},
+  "match_s": 17.601917505264282,
+  "runs": [
+    {
+      "rep": 0,
+      "map_s": 110.06236219406128,
+      "models": [
+        272
+      ]
+    },
+    {
+      "rep": 1,
+      "map_s": 86.77002787590027,
+      "models": [
+        272
+      ]
+    },
+    {
+      "rep": 2,
+      "map_s": 90.6321337223053,
+      "models": [
+        272
+      ]
+    }
+  ]
+}

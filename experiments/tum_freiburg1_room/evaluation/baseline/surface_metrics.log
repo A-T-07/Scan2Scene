@@ -1,0 +1,1 @@
+﻿experiments\tum_freiburg1_room\baseline: local thickness median 3.34 cm (p75 3.92) vs GT 2.88 cm | acc med 6.4 cm, <5cm 44% | compl med 3.4 cm, <5cm 57% | pts 2457590 (2282380 in GT region) | extent 6.64, 7.37, 2.92 vs GT 8.47, 8.72, 3.08

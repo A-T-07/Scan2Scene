@@ -1,0 +1,8 @@
+﻿== rgbd_dataset_freiburg1_room :: experiments\tum_freiburg1_room\baseline
+evo (272 poses): ATE SE3 209.1 mm | RPE SE3 34.9 mm | ATE Sim3 89.5 mm | RPE Sim3 28.2 mm | scale correction 0.842816791634246
+depth (136 fr): raw GT/pred p5/50/95 0.741, 0.834, 1.012, raw AbsRel 0.219 | aligned AbsRel as-is 0.211, after s* 0.105, d1 0.859, per-frame log-bias std 0.1238
+cloud: 2457590 pts; GT extent 5.17, 7.36, 2.97 m
+  [se3] acc median 20.2 cm, p90 64.7, <5cm 15% | compl median 4.0 cm, <5cm 56% | extent 7.88, 10.24, 3.75 m
+         plane n=[-0.027, 0.001, 1.0]: fused std 6.1 cm (p5-95 26.3), off -2.6 cm, GT std 1.5 cm; plane n=[-0.008, -0.015, 1.0]: fused std 13.7 cm (p5-95 40.4), off -7.6 cm, GT std 1.2 cm
+  [sim3] acc median 9.6 cm, p90 42.4, <5cm 33% | compl median 1.5 cm, <5cm 72% | extent 6.64, 8.63, 3.16 m
+         plane n=[-0.008, -0.009, 1.0]: fused std 3.7 cm (p5-95 16.0), off -1.5 cm, GT std 1.4 cm; plane n=[-0.003, -0.01, 1.0]: fused std 9.0 cm (p5-95 49.6), off +1.5 cm, GT std 1.3 cm

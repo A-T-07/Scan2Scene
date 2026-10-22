@@ -1,0 +1,3 @@
+﻿experiments\tum_freiburg1_room\improved: bad(>10%) rate 33.3% | mean err 9.91% -> confidence-weighted 9.02% | dropped 2.1% of px (bad rate there 81.3%)
+   median err by confidence quintile (low->high): 10.12%, 5.76%, 6.01%, 5.03%, 4.51%
+   signals: conf: rho -0.230 AUROC 0.654, c_mv: rho -0.228 AUROC 0.655, c_edge: rho -0.048 AUROC 0.523, c_sparse: rho +0.006 AUROC 0.528, c_frame: rho -0.334 AUROC 0.726

@@ -1,0 +1,1 @@
+﻿experiments\pose_conf_experiment\fr1_desk\arm3_mv_edge_frame: local thickness median 2.88 cm (p75 3.45) vs GT 2.89 cm | acc med 2.7 cm, <5cm 66% | compl med 3.1 cm, <5cm 61% | pts 306632 (304161 in GT region) | extent 3.65, 2.72, 1.35 vs GT 3.94, 2.97, 1.38

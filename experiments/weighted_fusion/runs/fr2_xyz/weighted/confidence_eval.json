@@ -1,0 +1,80 @@
+{
+  "recon_dir": "experiments\\weighted_fusion\\runs\\fr2_xyz\\weighted",
+  "pixels": 2000000,
+  "bad_rate": 0.075543,
+  "mean_err": 0.04294041985829956,
+  "median_err": 0.02809555910725403,
+  "mean_err_conf_weighted": 0.03982414149892286,
+  "dropped_frac": 0.0026355,
+  "bad_rate_in_dropped": 0.3071523430089167,
+  "bad_rate_in_rejected": 0.7777777777777778,
+  "by_conf_quintile": [
+    {
+      "conf_range": [
+        0.050018310546875,
+        0.65771484375
+      ],
+      "median_err": 0.03930055492404305,
+      "mean_err": 0.07146607201771005,
+      "bad_rate": 0.15537584017081593
+    },
+    {
+      "conf_range": [
+        0.65771484375,
+        0.74560546875
+      ],
+      "median_err": 0.02742155179134509,
+      "mean_err": 0.04255581422490055,
+      "bad_rate": 0.09441521048451151
+    },
+    {
+      "conf_range": [
+        0.74560546875,
+        0.81298828125
+      ],
+      "median_err": 0.027831984568062296,
+      "mean_err": 0.039392456640513315,
+      "bad_rate": 0.07888850226176865
+    },
+    {
+      "conf_range": [
+        0.81298828125,
+        0.86572265625
+      ],
+      "median_err": 0.026465340333153065,
+      "mean_err": 0.033716330109849826,
+      "bad_rate": 0.03884981950360368
+    },
+    {
+      "conf_range": [
+        0.86572265625,
+        0.9482421875
+      ],
+      "median_err": 0.02409941475076427,
+      "mean_err": 0.026979899366123286,
+      "bad_rate": 0.007156996349384767
+    }
+  ],
+  "signals": {
+    "conf": {
+      "spearman_with_err": -0.1879114775550436,
+      "auroc_flag_bad": 0.7149437942626432
+    },
+    "c_mv": {
+      "spearman_with_err": -0.33699502201112175,
+      "auroc_flag_bad": 0.8441868134381317
+    },
+    "c_edge": {
+      "spearman_with_err": -0.09607120673055543,
+      "auroc_flag_bad": 0.7657132888479958
+    },
+    "c_sparse": {
+      "spearman_with_err": -0.06389744987110557,
+      "auroc_flag_bad": 0.41960084836329314
+    },
+    "c_frame": {
+      "spearman_with_err": 0.060332280915219055,
+      "auroc_flag_bad": 0.6154532858676565
+    }
+  }
+}

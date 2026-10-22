@@ -1,0 +1,33 @@
+{
+  "recon_dir": "experiments\\tum_fr2_xyz\\tsdf_sens_trunc016",
+  "sim3_scale": 0.8169072244641151,
+  "n_fused": 716672,
+  "n_fused_in_gt_region": 419596,
+  "n_gt": 290522,
+  "local_thickness_fused": {
+    "median_cm": 2.539489262453576,
+    "p75_cm": 3.2051587826816177,
+    "p90_cm": 3.7332414307019044,
+    "n": 29990
+  },
+  "local_thickness_gt": {
+    "median_cm": 3.133618522090684,
+    "p75_cm": 3.637334036094533,
+    "p90_cm": 3.951473787891409,
+    "n": 29918
+  },
+  "accuracy_median_cm": 3.7389157549376453,
+  "accuracy_frac_5cm": 0.5823339593323101,
+  "completeness_median_cm": 4.370426530374778,
+  "completeness_frac_5cm": 0.5468914574455636,
+  "extent_fused_m": [
+    5.433595447155541,
+    5.481272146808083,
+    1.0951946034301645
+  ],
+  "extent_gt_m": [
+    5.293163950232666,
+    5.1567274920439194,
+    1.137144731591338
+  ]
+}

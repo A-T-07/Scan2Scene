@@ -1,0 +1,10 @@
+{
+  "recon_dir": "experiments\\pose_conf_experiment\\fr1_room\\arm2_mv_edge_pose",
+  "fallback_frames": 10,
+  "final_points": 1814271,
+  "points_only_from_fallback": 89299,
+  "pct_of_final": 4.92203204482682,
+  "their_acc_median_cm": 7.494577716261504,
+  "acc_median_all_cm": 5.446120376766054,
+  "acc_median_excluding_cm": 5.325270238368178
+}

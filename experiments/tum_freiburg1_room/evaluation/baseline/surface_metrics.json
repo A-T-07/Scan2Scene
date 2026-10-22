@@ -1,0 +1,33 @@
+{
+  "recon_dir": "experiments\\tum_freiburg1_room\\baseline",
+  "sim3_scale": 0.8428167916342458,
+  "n_fused": 2457590,
+  "n_fused_in_gt_region": 2282380,
+  "n_gt": 1028099,
+  "local_thickness_fused": {
+    "median_cm": 3.3404075833504145,
+    "p75_cm": 3.915245085675213,
+    "p90_cm": 4.200437344961042,
+    "n": 29989
+  },
+  "local_thickness_gt": {
+    "median_cm": 2.881497966209918,
+    "p75_cm": 3.4294763608650554,
+    "p90_cm": 3.8766583051227745,
+    "n": 29876
+  },
+  "accuracy_median_cm": 6.356882528721119,
+  "accuracy_frac_5cm": 0.4414440189626618,
+  "completeness_median_cm": 3.4206861981075254,
+  "completeness_frac_5cm": 0.5667333593360172,
+  "extent_fused_m": [
+    6.6425253082970945,
+    7.366471915942561,
+    2.9248811609664322
+  ],
+  "extent_gt_m": [
+    8.468012601860767,
+    8.718525208158535,
+    3.0799794020987776
+  ]
+}

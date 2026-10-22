@@ -1,0 +1,13 @@
+{
+  "mode": "transfer",
+  "model": "lin_xy",
+  "lam": 0.1,
+  "clamp": 0.2,
+  "calibration_sequence": "fr1_desk",
+  "heldout_median_abs_pct": 1.7143332094089951,
+  "baseline_const_heldout_median_abs_pct": 1.7382171313039736,
+  "shared_shape": [
+    0.009407476438164815,
+    0.0038346807635836117
+  ]
+}
