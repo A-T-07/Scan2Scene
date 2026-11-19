@@ -1,7 +1,6 @@
 # Scan2Scene — 3D scene reconstruction from monocular RGB video
 
-Computer Vision course project (Amrita School of Artificial Intelligence, Coimbatore) — Ashwin Tyagi, C Rishitha, Karthikeya Y,
- Kaushal S.
+Computer Vision course project (Amrita School of Artificial Intelligence, Coimbatore)
 
 Ordinary RGB video → COLMAP camera poses → Depth Anything V2 (Metric-Indoor-Large) dense depth → per-frame spatial
 depth alignment to the SfM sparse points → confidence-weighted voxel fusion → coloured 3D point cloud.
